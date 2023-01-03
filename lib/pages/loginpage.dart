@@ -172,7 +172,6 @@ class _loginState extends State<login> {
                                 fontWeight: FontWeight.w400)),
                       ),
 
-
                     ],
                   ),
 
