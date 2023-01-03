@@ -161,7 +161,7 @@ class _loginState extends State<login> {
                                 fontWeight: FontWeight.w400)),
                       ),
                       TextButton(onPressed: () {
-                        // Navigator.pushNamed(context, MyRoutes.forgetpassRoute);
+                        Navigator.pushNamed(context, Myroutes.signupRoute);
                       },
                         child: Text(
                             '  Sign Up',

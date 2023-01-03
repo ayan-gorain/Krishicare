@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:leaf_detection/pages/loginpage.dart';
+import 'package:leaf_detection/pages/signuppge.dart';
 import 'package:leaf_detection/utils/routes.dart';
 
 import 'pages/firstpage.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         "/":(context)=>Openpage(),
         Myroutes.openRoute: (context) =>Openpage(),
          Myroutes.loginRoute: (context) =>login(),
-      //  Myroutes.openRoute: (context) =>Openpage(),
+        Myroutes.signupRoute: (context) =>signup(),
       }
 
     );
