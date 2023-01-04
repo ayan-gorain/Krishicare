@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   velocity_x: ^3.6.0
   pinput: ^2.2.16
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:
