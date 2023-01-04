@@ -52,6 +52,7 @@ class _OnboardingpageState extends State<Onboardingpage> {
         ),
 
       );
+  // git push --set-upstream origin FlutterApp
   @override
   Widget build(BuildContext context) {
     return Scaffold(
