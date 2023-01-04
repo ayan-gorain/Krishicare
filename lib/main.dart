@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:leaf_detection/pages/loginpage.dart';
 import 'package:leaf_detection/pages/onboardingpage.dart';
 import 'package:leaf_detection/pages/signuppge.dart';
+import 'package:leaf_detection/pages/welcomepage.dart';
 import 'package:leaf_detection/utils/routes.dart';
 
 import 'pages/firstpage.dart';
@@ -18,11 +19,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes:{
-        "/":(context)=>Onboardingpage(),
+        "/":(context)=>welcomepage(),
         Myroutes.openRoute: (context) =>Openpage(),
          Myroutes.loginRoute: (context) =>login(),
         Myroutes.signupRoute: (context) =>signup(),
         Myroutes.OnboardingRoute: (context) =>Onboardingpage(),
+        Myroutes.welcomeRoute: (context) =>welcomepage(),
       }
 
     );

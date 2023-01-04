@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:leaf_detection/utils/routes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Onboardingpage extends StatefulWidget {
@@ -68,23 +69,22 @@ class _OnboardingpageState extends State<Onboardingpage> {
 
                 buildPage(
                     color: Colors.white,
-                    title: "Discover the best recipes you needed",
-                    urlImage: 'assets/images/22.jpg',
-
-                    subtitle: "healthy recipies made by people for your healthy life"
+                    title: "Choose the leaf",
+                    urlImage: 'assets/images/d1.png',
+                    subtitle: "Choose the leaf that is getting damaged"
                 ),buildPage(
                     color: Colors.white60,
-                    title: "Recipy Finder",
-                    urlImage: 'assets/images/ttt.jpg',
+                    title: "Scaning the leaf",
+                    urlImage: 'assets/images/d2.png',
 
-                    subtitle: ""
+                    subtitle: "Scaning the leaf that is getting damaged"
                 ),
                 buildPage(
                     color: Colors.white,
-                    title: "",
-                    urlImage: 'assets/images/r3.webp',
+                    title: "Get the results",
+                    urlImage: 'assets/images/d3.png',
 
-                    subtitle: ""
+                    subtitle: "you will able to know the dieases \ncercospora is the disease"
                 ),
 
 
@@ -103,7 +103,9 @@ class _OnboardingpageState extends State<Onboardingpage> {
                 backgroundColor: Colors.tealAccent,
                 minimumSize: const Size.fromHeight(80)
             ),
-            onPressed: () async{}, child: const Text("Get Started",
+            onPressed: () async{
+              Navigator.pushNamed(context, Myroutes.welcomeRoute);
+            }, child: const Text("Get Started",
             style:TextStyle(fontSize: 24))):
         Container(
             height:80,

@@ -119,7 +119,8 @@ class _loginState extends State<login> {
                     child: MaterialButton(
                       minWidth: 250,
                       height: 60,
-                      onPressed: () async {
+                      onPressed: () {
+                        Navigator.pushNamed(context, Myroutes.OnboardingRoute);
 
                       },
                       color: Colors.white,

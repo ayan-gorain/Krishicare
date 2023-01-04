@@ -23,6 +23,13 @@ class _signupState extends State<signup> {
 
     return Scaffold(
       backgroundColor: Colors.green,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -123,7 +130,9 @@ class _signupState extends State<signup> {
                     child: MaterialButton(
                       minWidth:250,
                       height: 60,
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushNamed(context, Myroutes.OnboardingRoute);
+                      },
                       color: Colors.white,
                       shape: RoundedRectangleBorder(
                           side: BorderSide(
