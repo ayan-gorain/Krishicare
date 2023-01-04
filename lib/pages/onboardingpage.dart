@@ -62,7 +62,7 @@ class _OnboardingpageState extends State<Onboardingpage> {
             child: PageView(
               controller: controller,
               onPageChanged: (index){
-                setState(() =>isLastPage=index==3);
+                setState(() =>isLastPage=index==2);
               },
               children: [
 
@@ -116,7 +116,7 @@ class _OnboardingpageState extends State<Onboardingpage> {
                     child: const Text("SKIP")),
                 SmoothPageIndicator(
                   controller: controller,
-                  count:6,
+                  count:3,
                   axisDirection: Axis.horizontal,
                   effect: JumpingDotEffect(
                     dotHeight: 16,
