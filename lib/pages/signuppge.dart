@@ -22,7 +22,7 @@ class _signupState extends State<signup> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: Colors.cyan,
+      backgroundColor: Colors.green,
       body: SingleChildScrollView(
         child: Stack(
           children: [
