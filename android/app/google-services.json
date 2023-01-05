@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081770092309",
+    "project_id": "krisicare",
+    "storage_bucket": "krisicare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081770092309:android:53d4f66c8c679fcdc6ab1c",
+        "android_client_info": {
+          "package_name": "com.example.leaf_detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081770092309-hnt9o69pemelc6c4aq68t57ic1ro757b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBglxWoRbbOYBRNSQdl-kP-QycQtNJQREo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081770092309-hnt9o69pemelc6c4aq68t57ic1ro757b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

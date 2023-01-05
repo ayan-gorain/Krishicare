@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
+
+
 class imagepicker extends StatefulWidget {
   const imagepicker({Key? key}) : super(key: key);
 
@@ -29,9 +31,13 @@ class _imagepickerState extends State<imagepicker> {
       final imageTemp=File(image.path);
 
       setState(() => this.image=imageTemp);
+
+
+
     }on PlatformException catch(e){
       print("failed to pick image");
     }
+
   }
   @override
   Widget build(BuildContext context) {
@@ -66,7 +72,9 @@ class _imagepickerState extends State<imagepicker> {
                                         borderRadius: BorderRadius.all(Radius.circular(10))),
                                     shadowColor: Colors.lightBlue,
                                   ),
-                                  onPressed: () => pickImagec(),
+                                  onPressed: () {
+                                    pickImagec();
+                                    },
                                 ),
                                 SizedBox(height: 50,),
                                 ElevatedButton(
