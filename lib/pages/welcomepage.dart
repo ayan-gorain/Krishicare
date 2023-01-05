@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:leaf_detection/pages/user_image_picker.dart';
 
+import '../utils/routes.dart';
+
 
 class welcomepage extends StatefulWidget {
   const welcomepage({Key? key}) : super(key: key);
@@ -95,7 +97,7 @@ class _welcomepageState extends State<welcomepage> {
                   viewportFraction: 0.8,
                 ),),
               SizedBox(height: 34,),
-              Text("KrisiCare",style: TextStyle(
+              Text("KrishiCare",style: TextStyle(
                 fontSize: 90,fontWeight: FontWeight.w700,fontFamily: 'Dancing',
               ),),
               SizedBox(height: 34,),
@@ -116,7 +118,25 @@ class _welcomepageState extends State<welcomepage> {
                       fontWeight: FontWeight.w500,
                     )),
               ),
-              imagepicker(),
+              SizedBox(height: 20,),
+              MaterialButton(
+                minWidth:350,
+                height: 50,
+                onPressed: () {
+                Navigator.pushNamed(context, Myroutes.imageclRoute );
+                },
+                color: Colors.yellow,
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Text("Scan for dieases",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                    )),
+              ),
+
             ],
 
         ),

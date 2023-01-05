@@ -32,7 +32,7 @@ class Openpage extends StatelessWidget {
                     color: Colors.black,
                     fontWeight: FontWeight.w600)),
             const SizedBox(height: 30.0),
-            const Text("To KrisiCare!!!!!!",
+            const Text("To KrishiCare!!!!!!",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     inherit: true,
