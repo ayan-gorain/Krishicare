@@ -33,7 +33,6 @@ class _imagepickerState extends State<imagepicker> {
       setState(() => this.image=imageTemp);
 
 
-
     }on PlatformException catch(e){
       print("failed to pick image");
     }
